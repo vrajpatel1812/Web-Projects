@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --main-backgroung:#0d1b2a;
+    --font-color:#778da9;
+    --shadow-color:#e0e1dd;
+    --list-color:#415a77;
+}
+
+body{
+    background-color: var(--main-backgroung);
+    color: var(--font-color);
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContainer, .weatherContainer{
+    display: block;
+    margin: 0 auto;
+    /* display: block; */
+    /* border: 5px solid black; */
+}
+
+.Container{
+    width: 300px;
+    height: 400px;
+    /* padding: 20rem; */
+}
+
+.Container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formContainer{
+    display: block;
+    /* border: 5px solid var(--shadow-color); */
+}
+
+.formContainer input[type="text"]{
+    width: 100%;
+    background-color: transparent;
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid var(--shadow-color);
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    color: whitesmoke;
+}
+
+.formContainer input[type="text"]:focus{
+    border-color: white;
+    outline: 0;
+}
+
+.formContainer ul li{
+    list-style: none;
+    height: 40px;
+    margin-top: 4px;
+    background-color: var(--list-color);
+    color: whitesmoke;
+    font-size: 1.3rem;
+    cursor: pointer;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding-left: 10px;
+}
+
+.formContainer ul li span{
+    font-size: 1.1rem;
+    padding-left: 2px;
+    color: var(--font-color);
+}
+
+#degrees{
+    font-size: 4rem;
+}
+
+#city{
+    color: rgb(156, 107, 107);
+    margin-top: 1rem;
+}
+
+.changeCity{
+    width: 40%;
+    height: 40px;
+    margin-top: 2rem;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: none;
+    background-color: var(--list-color);
+    color: whitesmoke;
+    width: 300px;
+}
+
+.changeCity:hover{
+    background-color: var(--font-color);
+}
+
+.listContainer{
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    /* background-color: black; */
+    justify-content: space-between;
+    width: 440px;
+}
+
+.listContainer h3{
+    font-size: 1.9rem;
+}
+
+.value{
+    margin-top: 0.2rem;
+    font-size: 1.5rem;
+}
+
+.value span{
+    font-size: 1rem;
+}
+

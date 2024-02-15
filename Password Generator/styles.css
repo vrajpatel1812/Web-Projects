@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --background-color:#3943B7;
+    --background2-color:#0E0E52;
+    --hover-color:#150578;
+    --shadow-color:#449DD1;
+    --extra-color:#78C0E0;
+
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: var(--background2-color);
+}
+
+.Container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 350px;
+    height: 370px;
+    background-color: var(--background-color);
+    padding: 1.5rem;
+    border-radius: 20px;
+}
+
+.password{
+    width: 100%;
+    /* border: 2px solid black; */
+}
+
+.password input{
+    width: 80%;
+    height: 2rem;
+    border: none;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: .5rem;
+}
+
+
+.password button{
+    width: 15%;
+    height: 2rem;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.password button:hover{
+    background-color: var(--shadow-color);
+}
+
+.ranges{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.ranges input{
+    width: 70%;
+    height: 2rem;
+    display: flex;
+    justify-content: start;
+}
+
+.ranges input:hover{
+    background-color: var(--shadow-color);
+}
+
+.ranges span{
+    height: 2rem;
+    width: 15%;
+    background-color: var(--background2-color);
+    color: whitesmoke;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+
+.options{
+    /* border: 2px solid black; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.option{
+    background-color: var(--background2-color);
+    padding: .5rem;
+    color: whitesmoke;
+    border-radius: 10px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    cursor: pointer;
+}
+
+.option input{
+    width: 20px;
+    height: 20px;
+} 
+
+.option label{
+    font-size: 18px;
+    margin-left: 8px;
+    /* display: flex; */
+    padding: auto 0;
+}
+
+#generateButton{
+    height: 2rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+}
+
+#generateButton:hover{
+    background-color: var(--shadow-color);
+}

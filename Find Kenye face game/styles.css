@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background: url('./Images/hans-peter-gauster-M1faIK1jvdE-unsplash.jpg');   
+    background-size: cover;
+}
+
+.Container img{
+    background-color: transparent;
+    width: 35px;
+    opacity: 0.5;
+    position: absolute;
+    cursor: pointer;
+}

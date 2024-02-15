@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone Paper Scissor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="headerContainer">
+        <h1 class="mainheader">Stone Paper Scissor</h1>
+    </header>
+    <main class="mainContainer">
+        <div class="imgContainer">
+            <div class="imgs" id="paper">
+                <img src="./Images/paper.png" alt="paper">
+            </div>
+            <div class="imgs" id="rock">
+                <img src="./Images/rock.png" alt="rock">
+            </div>
+            <div class="imgs" id="scissors">
+                <img src="./Images/scissors.png" alt="scissors">
+            </div>
+        </div>
+
+        <div class="scoreContainer">
+            <div class="scoreContent">
+                <div class="userScore">
+                    <p class="score" id="userID">0</p>
+                    <p>You</p>
+                </div>
+                <div class="compScore">
+                    <p class="score" id="compID">0</p>
+                    <p>Camp</p>
+                </div>
+            </div>
+
+            <button class="pickMoveButton">Pick Your Move</button>
+
+            <p class="msg"></p>
+        </div>
+    </main>
+    <script src="./main.js"></script>
+</body>
+
+</html>

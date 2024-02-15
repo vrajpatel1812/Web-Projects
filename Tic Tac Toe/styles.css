@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+:root{
+    --main-background : #0d1b2a;
+    --container-background : #415a77;
+    --button-background : #1b263b;
+    --button-color : #778da9;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: var(--main-background);
+}
+
+.mainContainer{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Container{
+    height: 500px;
+    width: 500px;
+    background-color: var(--container-background);
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    border-radius: 2rem;
+}
+
+.mainTitle{
+    margin-top: 1rem;
+}
+
+.gameContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 75%;
+    width: 95%;
+    gap: 1rem;
+    margin-top: 1.9rem;
+}
+
+.box{
+    background-color: var(--button-background);
+    border: none;
+    border-radius: 2rem;
+    font-size: 2.5rem;
+    color: var(--button-color);
+}
+
+.resetButton{
+    background-color: var(--button-background);
+    color: var(--button-color); 
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    width: 30%;
+    height: 40px;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1.3rem;
+}
+
+.WinnerName{
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+.headerContainer{
+    display: flex;
+    justify-content: center;
+    background-color: #081b31;
+    color: white;
+    padding: 1rem;
+    /* font-weight: bold; */
+}
+
+.mainheader{
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.imgContainer{
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;   
+}
+
+.imgs{
+    border-radius: 50%;
+    height: 165px;
+    width: 165px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgs:hover{
+    cursor: pointer;
+    background-color: #081b31;
+}
+
+img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.scoreContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scoreContent{
+    display: flex;
+    gap: 2rem;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    font-weight: 500;
+}
+
+.score{
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.pickMoveButton{
+    margin-top: 2rem;
+    height: 4rem;
+    width: 15rem;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    background-color: #081b31;
+    color: white;
+}
+
+.pickMoveButton:hover{
+    color: rgb(138, 166, 208);
+}
