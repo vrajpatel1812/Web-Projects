@@ -1,0 +1,47 @@
+* {
+  background-color: rgb(107, 107, 107);
+}
+
+.mainContainer {
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 70%;
+}
+
+.task--container {
+  cursor: pointer;
+}
+
+.taskContainer--leftBox {
+  width: 80%;
+  background-color: white;
+}
+
+.taskContainer--rightBox {
+    margin-left: auto;
+}
+
+.checkBox--Container {
+  margin-right: 10px;
+}
+
+.task--content {
+  background-color: white;
+}
+
+.trash--container {
+  margin-top: 2px;
+  float: right;
+  background-color: white;
+  font-size: 25px;
+}
+
+.notask--Container{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.Loading--Container{
+  margin-top: 20px;
+}
